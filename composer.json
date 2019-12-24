@@ -1,0 +1,82 @@
+{
+    "name": "hiqdev/hiapi-php-epp",
+    "type": "yii2-extension",
+    "description": "hiAPI PHP EPP plugin",
+    "keywords": [
+        "hiapi",
+        "hipanel",
+        "epp",
+        "registrar",
+        "domains"
+    ],
+    "homepage": "https://github.com/bladeroot/hiapi-epp-php",
+    "license": "BSD-3-Clause",
+    "support": {
+        "email": "support@hiqdev.com",
+        "source": "https://github.com/bladeroot/hiapi-php-epp",
+        "issues": "https://github.com/bladeroot/hiapi-php-epp/issues",
+        "wiki": "https://github.com/bladeroot/hiapi-php-epp/wiki",
+        "forum": "http://forum.hiqdev.com/"
+    },
+    "authors": [
+        {
+            "name": "Andrii Vasyliev",
+            "role": "Project lead",
+            "email": "sol@hiqdev.com",
+            "homepage": "http://hipanel.com/"
+        },
+        {
+            "name": "Dmitry Naumenko",
+            "role": "Lead backend developer",
+            "email": "d.naumenko.a@gmail.com",
+            "homepage": "http://silverfire.me/"
+        },
+        {
+            "name": "Andrey Klochok",
+            "role": "Lead frontend developer",
+            "email": "andreyklochok@gmail.com",
+            "homepage": "http://hiqdev.com/"
+        },
+        {
+            "name": "Yuriy Myronchuk",
+            "role": "QA Lead",
+            "email": "bladeroot@gmail.com",
+            "homepage": "http://hiqdev.com/"
+        }
+    ],
+    "require": {
+        "hiqdev/hiapi-legacy": "*"
+    },
+    "require-dev": {
+        "hiqdev/hidev-php": "<2.0 || dev-master",
+        "hiqdev/hidev-hiqdev": "<2.0 || dev-master",
+        "phpunit/phpunit": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "hiapi\\directi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "hiapi\\directi\\tests\\": "tests"
+        }
+    },
+    "extra": {
+        "config-plugin": {
+            "common": "config/common.php",
+            "params": "config/params.php"
+        }
+    },
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.hiqdev.com"
+        }
+    ]
+}
